@@ -11,11 +11,11 @@ public class ProjectInstaller : MonoBehaviour
     {
 
         var data = Resources.Load<GameData>("data");
-
+        
         InjectContainer.Instance.Reset();
         InjectContainer.Instance.Regist(data);
 
-        InjectContainer.Instance.Regist(new GameData());
+        //InjectContainer.Instance.Regist(new GameData());
 
         GameObject.DontDestroyOnLoad(this);
 
