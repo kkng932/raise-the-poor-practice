@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using System.Numerics;
 
 
 public class MyMenu 
@@ -20,7 +21,7 @@ public class MyMenu
     {
         var gameData = ReadFromXlsx<GameData>("Assets/xlsx/data.xlsx");
 
-        AssetDatabase.CreateAsset(gameData, "Assets/Data/data.asset");
+        AssetDatabase.CreateAsset(gameData, "Assets/Resources/data.asset");
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
@@ -29,7 +30,7 @@ public class MyMenu
         {
             Debug.Log(data.code + ", " + data.name + ", " + data.pay.ToString());
         }
-        
+
 
 
     }
@@ -191,6 +192,28 @@ public class MyMenu
                 fieldInfo.SetValue(temp, ulong.Parse(column));
             }
             
+        }
+        else if (ft == typeof(BigInteger))
+        {
+            
+            // 지수 표기법일 때
+            if (column.Contains("E") || column.Contains("e"))
+            {
+                //int exponent = int.Parse(column[0].ToString());
+                int fraction = int.Parse(column.Substring(column.IndexOf("+")));
+                BigInteger bcolumn = BigInteger.Parse(column[0].ToString());
+                for (int i = 0; i < fraction; i++)
+                    bcolumn *= 10;
+                //Debug.Log(bcolumn);
+                fieldInfo.SetValue(temp, bcolumn);
+
+            }
+            else
+            {
+                //Debug.Log(column);
+                fieldInfo.SetValue(temp, BigInteger.Parse(column));
+            }
+
         }
         else if (ft == typeof(string))
         {

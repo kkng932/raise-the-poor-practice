@@ -14,12 +14,7 @@ public class ShopItemTableViewController : TableViewController<Arbeit>
     private void LoadData()
     {
         injectObj.Inject(this);
-        //tableData = new List<Item>();
         tableData = gameData.Arbeit;
-        foreach(var g in gameData.Arbeit)
-        {
-            Debug.Log(g.name);
-        }
 
         UpdateContents();
     }

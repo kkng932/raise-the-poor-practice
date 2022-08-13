@@ -115,8 +115,8 @@ TextureImporter:
       name: rabbit_sprite_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 94
+        x: 10
+        y: 18
         width: 138
         height: 72
       alignment: 0
@@ -136,10 +136,10 @@ TextureImporter:
       name: rabbit_sprite_1
       rect:
         serializedVersion: 2
-        x: 252
-        y: 28
-        width: 139
-        height: 73
+        x: 173
+        y: 23
+        width: 138
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,8 +157,8 @@ TextureImporter:
       name: rabbit_sprite_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 18
+        x: 355
+        y: 15
         width: 138
         height: 72
       alignment: 0
