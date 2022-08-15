@@ -12,7 +12,7 @@ public class UserData
     public BigInteger click_money = 2;
     public BigInteger per_second = 2;
     public BigInteger property_status = 0;
-    public BigInteger levelup_cost = 0;
+    public BigInteger levelup_cost = 10;
 }
 static public class MoneyToString
 {

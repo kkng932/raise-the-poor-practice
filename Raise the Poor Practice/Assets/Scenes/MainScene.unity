@@ -2515,7 +2515,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 506943781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1808176651}
+        m_TargetAssemblyTypeName: PoorPower, Assembly-CSharp
+        m_MethodName: levelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &506943781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8241,6 +8253,7 @@ GameObject:
   - component: {fileID: 1808176648}
   - component: {fileID: 1808176650}
   - component: {fileID: 1808176649}
+  - component: {fileID: 1808176651}
   m_Layer: 5
   m_Name: Poor Power
   m_TagString: Untagged
@@ -8307,6 +8320,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808176647}
   m_CullTransparentMesh: 1
+--- !u!114 &1808176651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808176647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3ca90aa5c214847b48da7d8990f034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DescTxt: {fileID: 1403705970}
+  ButtonTxt: {fileID: 1290732276}
 --- !u!1 &1862805699
 GameObject:
   m_ObjectHideFlags: 0
