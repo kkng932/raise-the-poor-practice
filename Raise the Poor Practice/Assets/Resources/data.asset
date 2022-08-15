@@ -14,70 +14,121 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Arbeit:
   - code: 1
-    name: "\uC5EC\uC6B0"
+    name: fox
+    pay: 10000
+    levelUpCost: 1
     bonus: 5
     level: 0
+    perSecond: 1
   - code: 2
-    name: "\uD559"
+    name: hak
+    pay: 50000
+    levelUpCost: 5
     bonus: 7
     level: 0
+    perSecond: 5
   - code: 3
-    name: "\uC0AC\uC790"
+    name: lion
+    pay: 100000
+    levelUpCost: 10
     bonus: 10
     level: 0
+    perSecond: 10
   - code: 4
-    name: "\uB450\uAEBC\uBE44"
+    name: frog
+    pay: 500000
+    levelUpCost: 50
     bonus: 14
     level: 0
+    perSecond: 50
   - code: 5
-    name: "\uC18C"
+    name: cow
+    pay: 1000000
+    levelUpCost: 100
     bonus: 19
     level: 0
+    perSecond: 100
   - code: 6
-    name: "\uB291\uB300"
+    name: wolf
+    pay: 5000000
+    levelUpCost: 500
     bonus: 25
     level: 0
+    perSecond: 500
   - code: 7
-    name: "\uACF0"
+    name: bear
+    pay: 10000000
+    levelUpCost: 1000
     bonus: 40
     level: 0
+    perSecond: 1000
   - code: 8
-    name: "\uAC1C"
+    name: dog
+    pay: 50000000
+    levelUpCost: 5000
     bonus: 80
     level: 0
+    perSecond: 5000
   - code: 9
-    name: "\uAC70\uC704"
+    name: duck
+    pay: 100000000
+    levelUpCost: 10000
     bonus: 200
     level: 0
+    perSecond: 10000
   - code: 10
-    name: "\uD1A0\uB07C"
+    name: rabbit
+    pay: 10000000000
+    levelUpCost: 500000
     bonus: 600
     level: 0
+    perSecond: 500000
   - code: 11
     name: alien_girlfriend
+    pay: 50000000000
+    levelUpCost: 2500000
     bonus: 1000
     level: 0
+    perSecond: 2500000
   - code: 12
     name: teacher
+    pay: 100000000000
+    levelUpCost: 5000000
     bonus: 1500
     level: 0
+    perSecond: 5000000
   - code: 13
     name: farmer
+    pay: 1000000000000
+    levelUpCost: 50000000
     bonus: 2000
     level: 0
+    perSecond: 50000000
   - code: 14
     name: golf_player
+    pay: 10000000000000
+    levelUpCost: 500000000
     bonus: 2500
     level: 0
+    perSecond: 500000000
   - code: 15
     name: chief
+    pay: 100000000000000
+    levelUpCost: 5000000000
     bonus: 3000
     level: 0
+    perSecond: 5000000000
   - code: 16
     name: student
+    pay: 1E+15
+    levelUpCost: 50000000000
     bonus: 4000
     level: 0
+    perSecond: 50000000000
   - code: 17
     name: magician
+    pay: 5E+18
+    levelUpCost: 500000000000
     bonus: 5000
     level: 0
+    perSecond: 500000000000

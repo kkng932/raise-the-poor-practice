@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Numerics;
+using System;
+
 public class UserData
 {
+    public int level = 0;
     public BigInteger my_money = 0;
     public BigInteger click_money = 2;
     public BigInteger per_second = 2;
     public BigInteger property_status = 0;
+    public BigInteger levelup_cost = 0;
 }
 static public class MoneyToString
 {
@@ -19,7 +23,7 @@ static public class MoneyToString
         //BigInteger hae;
         man = 10000;
         eok = 100000000;
-        jo = 10000000000000;
+        jo = 1000000000000;
         gyeong = 10000000000000000;
         //hae = 100000000000000000000;
         if (BigInteger.Compare(money, man) == -1)
@@ -29,19 +33,31 @@ static public class MoneyToString
         else if (BigInteger.Compare(money, eok) == -1)
         {
             string temp = money.ToString();
-            str = temp.Substring(0, temp.Length - 4) + "만 " + temp.Substring(temp.Length - 4) + "원";
+            str = temp.Substring(0, temp.Length - 4) + "만 " + temp.Substring(temp.Length - 4).TrimStart('0') + "원";
         }
         else if (BigInteger.Compare(money, jo) == -1)
         {
             string temp = money.ToString();
-            str = temp.Substring(0, temp.Length - 7) + "억 " + temp.Substring(temp.Length - 7, 4) 
-                + "만 " + temp.Substring(temp.Length - 4) + "원";
+            string manValue = temp.Substring(temp.Length - 7, 4).TrimStart('0');
+            str = temp.Substring(0, temp.Length - 7) + "억 ";
+            if (manValue !="")
+            {
+                str += manValue + "만 ";
+            }
+            str += temp.Substring(temp.Length - 4).TrimStart('0') + "원";
+            
+            
         }
         else if (BigInteger.Compare(money, gyeong) == -1)
         {
             string temp = money.ToString();
-            str = temp.Substring(0, temp.Length - 12) + "조 " + temp.Substring(temp.Length - 12, 4) + "억 " 
-                + temp.Substring(temp.Length - 8, 4) + "만" + temp.Substring(temp.Length - 4) + "원";
+            string eokValue = temp.Substring(temp.Length - 12, 4).TrimStart('0');
+            str = temp.Substring(0, temp.Length - 12) + "조 ";
+            if (eokValue != "")
+            {
+                str += temp.Substring(temp.Length - 12, 4).TrimStart('0') + "억 ";
+            }
+            str += temp.Substring(temp.Length - 4).TrimStart('0') + "원";
         }
         //else if (BigInteger.Compare(money, hae) == -1)
         //{
@@ -61,8 +77,9 @@ public class MoneyDirector : MonoBehaviour
     GameObject perSecond;
     GameObject propertyStatus;
 
-    float span = 1.0f;
-    float delta = 0;
+    DateTime startTime;
+    DateTime dTime;
+    
     [Inject]
     UserData userData;
     InjectObj InjectObj = new InjectObj();
@@ -75,20 +92,24 @@ public class MoneyDirector : MonoBehaviour
         this.clickMoney = GameObject.Find("Click Money");
         this.perSecond = GameObject.Find("Per Second");
         this.propertyStatus = GameObject.Find("Property Status");
+        startTime = DateTime.Now;
         
     }
     void Update()
     {
+        
         this.myMoney.GetComponent<Text>().text = MoneyToString.MToS(userData.my_money);
         this.propertyStatus.GetComponent<Text>().text = "자산현황:" + MoneyToString.MToS(userData.property_status);
-
+        this.clickMoney.GetComponent<Text>().text = MoneyToString.MToS(userData.click_money)+"/클릭";
+        this.perSecond.GetComponent<Text>().text = MoneyToString.MToS(userData.per_second) + "/초";
 
         // 1초당 증가하는 돈
-        this.delta += Time.deltaTime;
-        if (this.delta > this.span)
+        dTime = DateTime.Now;
+        int diffSecond = (dTime - startTime).Seconds;
+        if (diffSecond >= 1)
         {
-            this.delta = 0;
-            userData.my_money += userData.per_second;
+            startTime = DateTime.Now;
+            userData.my_money += userData.per_second*diffSecond;
         }
 
         // 클릭시 증가하는 돈

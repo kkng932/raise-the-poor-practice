@@ -26,10 +26,10 @@ public class MyMenu
         AssetDatabase.Refresh();
 
 
-        foreach (var data in gameData.Arbeit)
-        {
-            Debug.Log(data.code + ", " + data.name + ", " + data.pay.ToString());
-        }
+        //foreach (var data in gameData.Arbeit)
+        //{
+        //    Debug.Log(data.code + ", " + data.name + ", " + data.pay.ToString());
+        //}
 
 
 

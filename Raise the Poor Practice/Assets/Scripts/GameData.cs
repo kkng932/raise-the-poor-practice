@@ -10,10 +10,11 @@ public class Arbeit
 {
     public int code;
     public string name;
-    public BigInteger pay;
+    public string pay;
+    public string levelUpCost;
     public int bonus;
     public int level;
-    public BigInteger levelUpCost;
+    public string perSecond;
 }
 
 public class GameData : ScriptableObject
