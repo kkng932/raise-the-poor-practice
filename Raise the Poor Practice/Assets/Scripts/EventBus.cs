@@ -12,7 +12,7 @@ public class SkillLevelUpEvent
 public class EventBus 
 {
 
-    static Dictionary<System.Type, List<Action>> _handlerDic = new Dictionary<Type, List<Action>>();
+    static Dictionary<System.Type, List<Delegate>> _handlerDic = new Dictionary<Type, List<Delegate>>();
  
     public static void Publish<T>(T ev)
     {
@@ -33,9 +33,9 @@ public class EventBus
         var type = typeof(T);
         if (_handlerDic.ContainsKey(type) == false)
         {
-            _handlerDic.Add(type,new List<Action>());
+            _handlerDic.Add(type,new List<Delegate>());
         }
-        _handlerDic[type].Add(handler as System.Action);
+        _handlerDic[type].Add(handler);
     }
 
     public static void Unsubscribes<T>(System.Action<T> handler)

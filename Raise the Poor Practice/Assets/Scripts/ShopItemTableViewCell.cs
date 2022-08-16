@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Numerics;
-public class GoldChangeEvent
+public class GoldPerSecondChangeEvent
 {
     public BigInteger gold;
 
-    static GoldChangeEvent _ev = new GoldChangeEvent();
+    
+    static GoldPerSecondChangeEvent _ev = new GoldPerSecondChangeEvent();
     public static void Publish(BigInteger gold)
     {
         _ev.gold = gold;
@@ -67,7 +68,7 @@ public class ShopItemTableViewCell : TableViewCell<Arbeit>
         userData.per_second += strToBI(arbeit.perSecond);
         UpdateContent(arbeit);
         
-        GoldChangeEvent.Publish(userData.my_money);
+        GoldPerSecondChangeEvent.Publish(userData.per_second);
 
         //  EventBus.Publish(new GoldChangeEvent() { gold= userData.gold});
 

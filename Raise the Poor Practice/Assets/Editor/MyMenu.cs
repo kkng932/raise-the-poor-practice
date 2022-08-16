@@ -215,6 +215,15 @@ public class MyMenu
             }
 
         }
+        else if (ft == typeof(bool))
+        {
+            if (column.ToUpper().Equals("TRUE"))
+            {
+                fieldInfo.SetValue(temp, true);
+            }
+            else
+                fieldInfo.SetValue(temp, false);
+        }
         else if (ft == typeof(string))
         {
             fieldInfo.SetValue(temp, column);

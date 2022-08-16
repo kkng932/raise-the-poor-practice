@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: character
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: be7dccfa327287246a647894150136d1, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1024552452692537640, guid: b8d7cd518d3184a4790f52f6acf32c83, type: 3}
+  - {fileID: -4157312697043145231, guid: b8d7cd518d3184a4790f52f6acf32c83, type: 3}
+  - {fileID: 4806611480414636138, guid: 42583e0373c2d094fb8cdcd90c4ee8ab, type: 3}
+  - {fileID: -5452400020089254403, guid: 42583e0373c2d094fb8cdcd90c4ee8ab, type: 3}
+  - {fileID: -7074925920440440983, guid: e4aefec32df3fd04a8cdcec4b480b86c, type: 3}
+  - {fileID: -6050268594417182481, guid: e4aefec32df3fd04a8cdcec4b480b86c, type: 3}
+  - {fileID: -4298978924925727894, guid: 29a91af30bf533846aa7651478ae75e4, type: 3}
+  - {fileID: -3419676982919820214, guid: 29a91af30bf533846aa7651478ae75e4, type: 3}
+  - {fileID: 21300000, guid: 6a1aad14cecc93e4d8450e16f52bfbb4, type: 3}
+  - {fileID: 21300000, guid: 5d347724468326f42a58fdee92293abc, type: 3}
+  - {fileID: 21300000, guid: 45fa83743072fbb4588f1108912e9872, type: 3}
+  - {fileID: -3719800842867212524, guid: f99d3c15a25553741af42147e37a4947, type: 3}
+  - {fileID: -2630418236956768622, guid: f99d3c15a25553741af42147e37a4947, type: 3}
+  - {fileID: 21300000, guid: 40555f961016927428a2d0682d2385df, type: 3}
+  - {fileID: 21300000, guid: 2ca661d6532396a4a88cec86419acd76, type: 3}
+  - {fileID: -3683193467633699978, guid: 282f0377fa9095a4185c30f7eb2d3b4c, type: 3}
+  - {fileID: -1457942107105862254, guid: 282f0377fa9095a4185c30f7eb2d3b4c, type: 3}
+  - {fileID: 21300000, guid: c811e548999f23943aa6c9f8cdce62d2, type: 3}
+  - {fileID: 2994718930005075327, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
+  - {fileID: -6385029908380293944, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
+  - {fileID: -2614752634628811398, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bear_sprite_0
+  - bear_sprite_1
+  - cow_sprite_1
+  - cow_sprite_0
+  - dog_sprite_0
+  - dog_sprite_1
+  - fox_sprite_1
+  - fox_sprite_0
+  - frog
+  - backbutton
+  - wolf
+  - duck_sprite_1
+  - duck_sprite_0
+  - lion
+  - hak
+  - ti_1
+  - ti_0
+  - background
+  - rabbit_sprite_0
+  - rabbit_sprite_1
+  - rabbit_sprite_2
+  m_RenderDataMap: {}
+  m_Tag: character
+  m_IsVariant: 0

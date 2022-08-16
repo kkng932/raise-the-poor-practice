@@ -132,3 +132,46 @@ MonoBehaviour:
     bonus: 5000
     level: 0
     perSecond: 500000000000
+  Realty:
+  - code: 1
+    name: housing
+    price: 200000000
+    per_second: 300000
+    buy_status: 0
+    profit: 0
+  - code: 2
+    name: apartment
+    price: 500000000
+    per_second: 500000
+    buy_status: 0
+    profit: 0
+  - code: 3
+    name: store
+    price: 1000000000
+    per_second: 1000000
+    buy_status: 0
+    profit: 0
+  - code: 4
+    name: building5
+    price: 2000000000
+    per_second: 2000000
+    buy_status: 0
+    profit: 0
+  - code: 5
+    name: building10
+    price: 5000000000
+    per_second: 3000000
+    buy_status: 0
+    profit: 0
+  - code: 6
+    name: building20
+    price: 10000000000
+    per_second: 5000000
+    buy_status: 0
+    profit: 0
+  - code: 7
+    name: building50
+    price: 100000000000
+    per_second: 7000000
+    buy_status: 0
+    profit: 0
