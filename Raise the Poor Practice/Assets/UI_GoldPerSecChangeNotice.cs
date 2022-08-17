@@ -8,15 +8,15 @@ public class UI_GoldPerSecChangeNotice : MonoBehaviour
 
     public AnimationClip showClip,hideClip;
     public Animation anim;
-    public BigInteger lastGoldPerSec;
+    public double lastGoldPerSec;
     public UnityEngine.UI.Text goldTxt;
 
     
     float time=0;
     float goldUpdateDuration = 0.5f;
     float showDuration = 1;
-    BigInteger startGoldPerSec,targetGoldPerSec;
-    public void Show(BigInteger goldPerSec)
+    double startGoldPerSec,targetGoldPerSec;
+    public void Show(double goldPerSec)
     {
         this.gameObject.SetActive(true);
         startGoldPerSec = lastGoldPerSec;

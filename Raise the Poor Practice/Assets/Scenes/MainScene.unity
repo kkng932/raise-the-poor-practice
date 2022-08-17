@@ -5287,7 +5287,7 @@ Canvas:
   m_GameObject: {fileID: 939141502}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -5297,7 +5297,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &939141506
 RectTransform:
@@ -7545,6 +7545,7 @@ MonoBehaviour:
   showClip: {fileID: 7400000, guid: 8d91996fb6ae565419abfbce1fd2828c, type: 2}
   hideClip: {fileID: 7400000, guid: 426bb1e0d45181749ac5b35eeb5eead5, type: 2}
   anim: {fileID: 1336380275}
+  lastGoldPerSec: 0
   goldTxt: {fileID: 1919981413}
 --- !u!111 &1336380275
 Animation:

@@ -29,12 +29,11 @@ public class RealtyItemTableViewCell : TableViewCell<Realty>
 
         NameTxt.text = realty.name;
 
-        BigInteger price = BigInteger.Parse(realty.price);
-        BigInteger per_second = BigInteger.Parse(realty.per_second);
+        
         
         if(!realty.buy_status)
         {
-            BtnTxt.text = MoneyToString.MToS(price);
+            BtnTxt.text = MoneyToString.MToS(realty.price);
             PriceTxt.text = "";
             CurrPriceTxt.text = "";
         }
@@ -43,8 +42,8 @@ public class RealtyItemTableViewCell : TableViewCell<Realty>
             endTime = DateTime.Now;
             BtnTxt.text = "판매하기";
             PriceTxt.text = "구매가: " + realty.price;
-            realty.profit = (per_second * ((endTime - startTime).Seconds)).ToString();
-            CurrPriceTxt.text = "현재가: "+ (price+per_second*((endTime-startTime).Seconds)).ToString();
+            realty.profit = realty.per_second * ((endTime - startTime).Seconds);
+            CurrPriceTxt.text = "현재가: "+ (realty.price+realty.per_second*((endTime-startTime).Seconds)).ToString();
         }
     }
     public BigInteger strToBI(string str)
@@ -65,20 +64,20 @@ public class RealtyItemTableViewCell : TableViewCell<Realty>
     }
     public void BuyItem()
     {
-        BigInteger per_second = BigInteger.Parse(realty.per_second);
+       
         // 구입하기 전
         if(!realty.buy_status)
         {
-            if (userData.my_money < per_second)
+            if (userData.my_money < realty.per_second)
                 return;
             realty.buy_status = true;
             startTime = DateTime.Now;
         }
         else
         {
-            BigInteger price = BigInteger.Parse(realty.price);
+           
             realty.buy_status = false;
-            userData.my_money += (price + per_second * ((endTime - startTime).Seconds));
+            userData.my_money += (realty.price + realty.per_second * ((endTime - startTime).Seconds));
         }
 
     }

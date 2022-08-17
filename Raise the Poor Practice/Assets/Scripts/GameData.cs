@@ -10,11 +10,11 @@ public class Arbeit
 {
     public int code;
     public string name;
-    public string pay;
-    public string levelUpCost;
+    public double pay;
+    public double levelUpCost;
     public int bonus;
     public int level;
-    public string perSecond;
+    public double perSecond;
 }
 
 [Serializable]
@@ -22,10 +22,10 @@ public class Realty
 {
     public int code;
     public string name;
-    public string price;
-    public string per_second;
+    public double price;
+    public double per_second;
     public bool buy_status;
-    public string profit;
+    public double profit;
 
 }
 public class GameData : ScriptableObject

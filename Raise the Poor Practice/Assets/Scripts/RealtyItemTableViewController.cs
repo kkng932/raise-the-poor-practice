@@ -40,12 +40,12 @@ public class RealtyItemTableViewController : TableViewController<Realty>
         
         foreach(var t in tableData)
         {
-            BigInteger purchase = 0;
-            BigInteger profit = 0;
+            double purchase = 0;
+            double profit = 0;
             if(t.buy_status)
             {
-                purchase += BigInteger.Parse(t.price);
-                profit += BigInteger.Parse(t.profit);
+                purchase += t.price;
+                profit += t.profit;
             }
             PurchaseTxt.text = "부동산 총 구매가: " + purchase.ToString();
             CurrValueTxt.text = "현재 총 가치: " + (purchase + profit).ToString();

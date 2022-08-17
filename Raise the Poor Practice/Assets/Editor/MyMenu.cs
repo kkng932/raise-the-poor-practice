@@ -230,6 +230,16 @@ public class MyMenu
         }
         
     }
+    [MenuItem("MyMenu/DoubleCheck")]
+    static public void DoubleCheck()
+    {
+        //1ÇØ
+        
+        double temp = double.Parse("1000000000000000000000");
+        Debug.Log(temp.ToString());
+        temp += 10000000000;
+        Debug.Log(temp);
+    }
 
 }
 
