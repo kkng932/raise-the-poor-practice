@@ -28,8 +28,19 @@ public class Realty
     public double profit;
 
 }
+[Serializable]
+public class Paint
+{
+    public int code;
+    public string name;
+    public double price;
+    public double per_second;
+    public bool buy_status;
+    public double profit;
+}
 public class GameData : ScriptableObject
 {
     public List<Arbeit> Arbeit = new List<Arbeit>();
     public List<Realty> Realty = new List<Realty>();
+    public List<Paint> Paint = new List<Paint>();
 }

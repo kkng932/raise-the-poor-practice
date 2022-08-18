@@ -39,7 +39,7 @@ static public class MoneyToString
         {
             string temp = money.ToString();
             string manValue = temp.Substring(temp.Length - 7, 4).TrimStart('0');
-            str = temp.Substring(0, temp.Length - 7) + "¾ï ";
+            str = temp.Substring(0, temp.Length - 8) + "¾ï ";
             if (manValue !="")
             {
                 str += manValue + "¸¸ ";

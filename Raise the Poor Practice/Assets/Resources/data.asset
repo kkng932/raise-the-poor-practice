@@ -120,14 +120,14 @@ MonoBehaviour:
     perSecond: 5000000000
   - code: 16
     name: student
-    pay: 1E+15
+    pay: 1000000000000000
     levelUpCost: 50000000000
     bonus: 4000
     level: 0
     perSecond: 50000000000
   - code: 17
     name: magician
-    pay: 5E+18
+    pay: 5e+18
     levelUpCost: 500000000000
     bonus: 5000
     level: 0
@@ -173,5 +173,48 @@ MonoBehaviour:
     name: building50
     price: 100000000000
     per_second: 7000000
+    buy_status: 0
+    profit: 0
+  Paint:
+  - code: 1
+    name: "\uAC00\uC81C\uD2B8\uBC15\uC0AC\uC758 \uCD08\uC0C1"
+    price: 200000000000
+    per_second: 20000000
+    buy_status: 0
+    profit: 0
+  - code: 2
+    name: "\uB3C4\uB77C\uBC84\uB824\uC758 \uCD08\uC0C1"
+    price: 300000000000
+    per_second: 30000000
+    buy_status: 0
+    profit: 0
+  - code: 3
+    name: "\uAE5C\uCC0D\uD55C \uC808\uADDC"
+    price: 400000000000
+    per_second: 40000000
+    buy_status: 0
+    profit: 0
+  - code: 4
+    name: "\uBA54\uB871"
+    price: 500000000000
+    per_second: 50000000
+    buy_status: 0
+    profit: 0
+  - code: 5
+    name: "\uD328\uAC00 \uC65C\uC774\uB798"
+    price: 600000000000
+    per_second: 60000000
+    buy_status: 0
+    profit: 0
+  - code: 6
+    name: "\uACB0\uD63C\uD560 \uC218 \uC788\uC744\uAE4C"
+    price: 700000000000
+    per_second: 70000000
+    buy_status: 0
+    profit: 0
+  - code: 7
+    name: "\uBAA8\uC790\uB77C\uB098"
+    price: 40000000000000
+    per_second: 4000000000
     buy_status: 0
     profit: 0
