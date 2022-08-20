@@ -2,6 +2,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Numerics;
 using System;
+public class PaintStatusChangeEvent
+{
+    public int code;
+    public bool status;
+    static PaintStatusChangeEvent _ev = new PaintStatusChangeEvent();
+    public static void Publish(int code, bool status)
+    {
+        _ev.code = code;
+        _ev.status = status;
+        EventBus.Publish(_ev);
+    }
+}
 
 public class PaintItemTableViewCell : TableViewCell<Paint>
 {
@@ -22,11 +34,14 @@ public class PaintItemTableViewCell : TableViewCell<Paint>
     DateTime startTime;
     DateTime endTime;
 
-
+    private void OnEnable()
+    {
+        InjectObj.Inject(this);
+    }
     public override void UpdateContent(Paint itemData)
     {
         paint = itemData;
-        InjectObj.Inject(this);
+        
 
         NameTxt.text = paint.name;
 
@@ -34,7 +49,7 @@ public class PaintItemTableViewCell : TableViewCell<Paint>
 
         if (!paint.buy_status)
         {
-            BtnTxt.text = MoneyToString.MToS(paint.price);
+            BtnTxt.text = Utility.MoneyToString(paint.price);
             PriceTxt.text = "";
             CurrPriceTxt.text = "";
         }
@@ -47,39 +62,25 @@ public class PaintItemTableViewCell : TableViewCell<Paint>
             CurrPriceTxt.text = "현재가: " + (paint.price + paint.per_second * ((endTime - startTime).Seconds)).ToString();
         }
     }
-    public BigInteger strToBI(string str)
-    {
-        // 지수 표기법일 때
-        if (str.Contains("E") || str.Contains("e"))
-        {
-
-            int fraction = int.Parse(str.Substring(str.IndexOf("+")));
-            BigInteger bStr = BigInteger.Parse(str[0].ToString());
-            for (int i = 0; i < fraction; i++)
-                bStr *= 10;
-            return bStr;
-        }
-        else
-            return BigInteger.Parse(str);
-
-    }
     public void BuyItem()
     {
 
         // 구입하기 전
         if (!paint.buy_status)
         {
-            if (userData.my_money < paint.per_second)
+            if (userData.my_money < paint.price)
                 return;
             paint.buy_status = true;
+            userData.my_money -= paint.price;
             startTime = DateTime.Now;
         }
         else
         {
-
             paint.buy_status = false;
             userData.my_money += (paint.price + paint.per_second * ((endTime - startTime).Seconds));
         }
+        PaintStatusChangeEvent.Publish(paint.code, paint.buy_status);
+
 
     }
     private void Update()

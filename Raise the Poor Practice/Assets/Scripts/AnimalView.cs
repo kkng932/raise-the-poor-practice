@@ -7,12 +7,12 @@ public class AnimalView : MonoBehaviour
     [SerializeField]
     GameObject[] Animals;
 
-    private void Start()
+
+    public void Show(int code, int level)
     {
-        
+        if (code <= Animals.Length)
+            if (level > 0)
+                Animals[code - 1].SetActive(true);
     }
-    public void employee(int code)
-    {
-        Animals[code-1].SetActive(true);
-    }
+
 }

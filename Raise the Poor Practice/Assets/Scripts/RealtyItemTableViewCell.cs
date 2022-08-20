@@ -33,7 +33,7 @@ public class RealtyItemTableViewCell : TableViewCell<Realty>
         
         if(!realty.buy_status)
         {
-            BtnTxt.text = MoneyToString.MToS(realty.price);
+            BtnTxt.text = Utility.MoneyToString(realty.price);
             PriceTxt.text = "";
             CurrPriceTxt.text = "";
         }

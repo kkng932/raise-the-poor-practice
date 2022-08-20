@@ -38,20 +38,21 @@ public class PaintItemTableViewController : TableViewController<Paint>
     }
     private void Update()
     {
-
+        double purchase = 0;
+        double profit = 0;
         foreach (var t in tableData)
         {
-            double purchase = 0;
-            double profit = 0;
+            
             if (t.buy_status)
             {
                 purchase += t.price;
                 profit += t.profit;
             }
-            PurchaseTxt.text = "미술품 총 구매가: " + purchase.ToString();
-            CurrValueTxt.text = "현재 총 가치: " + (purchase + profit).ToString();
-            ProfitTxt.text = "이익: " + profit.ToString();
+            
         }
+        PurchaseTxt.text = "미술품 총 구매가: " + Utility.MoneyToString(purchase);
+        CurrValueTxt.text = "현재 총 가치: " + Utility.MoneyToString(purchase + profit);
+        ProfitTxt.text = "이익: " + Utility.MoneyToString(profit);    
     }
 
 }

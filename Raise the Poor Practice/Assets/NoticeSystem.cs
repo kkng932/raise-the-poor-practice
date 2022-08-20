@@ -22,7 +22,7 @@ public class NoticeSystem : MonoBehaviour
 
     private void OnDisable()
     {
-        EventBus.Unsubscribes< GoldPerSecondChangeEvent>(goldPerSecChangeHandler);
+        EventBus.Unsubscribes<GoldPerSecondChangeEvent>(goldPerSecChangeHandler);
     }
 
 

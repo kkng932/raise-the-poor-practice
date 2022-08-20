@@ -43,10 +43,10 @@ public class UI_GoldPerSecChangeNotice : MonoBehaviour
             Hide();
         }
 
-        var v= (double)startGoldPerSec + (double)(targetGoldPerSec - startGoldPerSec) * t;
+        var v= startGoldPerSec + (targetGoldPerSec - startGoldPerSec) * t;
 
 
-        goldTxt.text = "√ ¥Á ∞ÒµÂ»πµÊ∑Æ " + ((BigInteger)v).ToString();
+        goldTxt.text = "√ ¥Á ∞ÒµÂ»πµÊ∑Æ " + Utility.MoneyToString(v);
     }
 
 
