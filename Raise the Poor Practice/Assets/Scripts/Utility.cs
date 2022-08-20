@@ -10,12 +10,13 @@ static public class Utility
         money = Math.Truncate(money);
 
         string str = "";
-        double man, eok, jo, gyeong, hae;
+        double man, eok, jo, gyeong, hae, ja;
         man = 10000;
         eok = 100000000;
         jo = 1000000000000;
         gyeong = 10000000000000000;
         hae = double.Parse("100000000000000000000");
+        ja = double.Parse("1000000000000000000000000");
         if (money < man)
         {
             str = money.ToString() + "원";
@@ -41,7 +42,8 @@ static public class Utility
         }
         else if (money < gyeong)
         {
-            string temp = money.ToString();
+            string temp = $"{money:F0}";
+            //string temp = money.ToString();
             
             str = temp.Substring(0, temp.Length - 12) + "조 ";
             string eokValue = temp.Substring(temp.Length - 12, 4).TrimStart('0');
@@ -58,18 +60,38 @@ static public class Utility
         }
         else if (money <hae)
         {
-            string temp = money.ToString();
+            string temp = $"{money:F0}";
+            //string temp = money.ToString();
             
-            str = temp.Substring(0, str.Length - 16) + "경 ";
-            string joValue = temp.Substring(str.Length - 16, 4).TrimStart('0');
+            
+            str = temp.Substring(0, temp.Length - 16) + "경 ";
+            string joValue = temp.Substring(temp.Length - 16, 4).TrimStart('0');
             if (joValue !="")
             {
                 str += joValue + "조";
             }
-            string eokValue = temp.Substring(str.Length - 12, 4).TrimStart('0');
+            string eokValue = temp.Substring(temp.Length - 12, 4).TrimStart('0');
             if ( eokValue !="")
             {
-                str += eokValue + "억";
+                str += eokValue + "억 ";
+            }
+            str += "원";
+        }
+        else
+        {
+            string temp = $"{money:F0}";
+            //string temp = money.ToString();
+
+            str = temp.Substring(0, temp.Length - 20) + "해 ";
+            string gyeongValue = temp.Substring(temp.Length - 20, 4).TrimStart('0');
+            if (gyeongValue != "")
+            {
+                str += gyeongValue + "경";
+            }
+            string joValue = temp.Substring(temp.Length - 16, 4).TrimStart('0');
+            if (joValue != "")
+            {
+                str += joValue + "조 ";
             }
             str += "원";
         }

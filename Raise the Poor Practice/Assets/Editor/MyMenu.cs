@@ -239,6 +239,8 @@ public class MyMenu
         Debug.Log(temp.ToString());
         temp += 10000000000;
         Debug.Log(temp);
+        double temp2 = 1e+15;
+        Debug.Log(Utility.MoneyToString(temp2));
     }
 
 }
