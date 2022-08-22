@@ -7,7 +7,7 @@ using System;
 
 public class UserData
 {
-    public int level = 0;
+    public int level=0;
     public double my_money = 0;
     public double click_money = 2;
     public double per_second = 2;

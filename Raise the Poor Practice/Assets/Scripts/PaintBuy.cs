@@ -7,10 +7,18 @@ public class PaintBuy : MonoBehaviour
     [SerializeField]
     GameObject[] Paints;
 
-    private void Start()
+    [Inject]
+    GameData gameData;
+    InjectObj injectObj = new InjectObj();
+
+    private void OnEnable()
     {
-        foreach (var a in Paints)
-            a.SetActive(false);
+        injectObj.Inject(this);
+        for (int i=0;i<Paints.Length;i++)
+        {
+            Paints[i].SetActive(gameData.Paint[i].buy_status);
+        }
+        
     }
     public void Show(int code, bool status)
     {

@@ -14,98 +14,98 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Arbeit:
   - code: 1
-    name: fox
+    name: "\uC5EC\uC6B0"
     pay: 10000
     levelUpCost: 1
     bonus: 5
     level: 0
     perSecond: 1
   - code: 2
-    name: hak
+    name: "\uD559"
     pay: 50000
     levelUpCost: 5
     bonus: 7
     level: 0
     perSecond: 5
   - code: 3
-    name: lion
+    name: "\uC0AC\uC790"
     pay: 100000
     levelUpCost: 10
     bonus: 10
     level: 0
     perSecond: 10
   - code: 4
-    name: frog
+    name: "\uB450\uAEBC\uBE44"
     pay: 500000
     levelUpCost: 50
     bonus: 14
     level: 0
     perSecond: 50
   - code: 5
-    name: cow
+    name: "\uC18C"
     pay: 1000000
     levelUpCost: 100
     bonus: 19
     level: 0
     perSecond: 100
   - code: 6
-    name: wolf
+    name: "\uB291\uB300"
     pay: 5000000
     levelUpCost: 500
     bonus: 25
     level: 0
     perSecond: 500
   - code: 7
-    name: bear
+    name: "\uACF0"
     pay: 10000000
     levelUpCost: 1000
     bonus: 40
     level: 0
     perSecond: 1000
   - code: 8
-    name: dog
+    name: "\uAC1C"
     pay: 50000000
     levelUpCost: 5000
     bonus: 80
     level: 0
     perSecond: 5000
   - code: 9
-    name: duck
+    name: "\uAC70\uC704"
     pay: 100000000
     levelUpCost: 10000
     bonus: 200
     level: 0
     perSecond: 10000
   - code: 10
-    name: rabbit
+    name: "\uD1A0\uB07C"
     pay: 10000000000
     levelUpCost: 500000
     bonus: 600
     level: 0
     perSecond: 500000
   - code: 11
-    name: alien_girlfriend
+    name: "\uC950"
     pay: 50000000000
     levelUpCost: 2500000
     bonus: 1000
     level: 0
     perSecond: 2500000
   - code: 12
-    name: teacher
+    name: "\uB3FC\uC9C0"
     pay: 100000000000
     levelUpCost: 5000000
     bonus: 1500
     level: 0
     perSecond: 5000000
   - code: 13
-    name: farmer
+    name: "\uC81C\uBE44"
     pay: 1000000000000
     levelUpCost: 50000000
     bonus: 2000
     level: 0
     perSecond: 50000000
   - code: 14
-    name: golf_player
+    name: "\uBC15\uC950"
     pay: 10000000000000
     levelUpCost: 500000000
     bonus: 2500

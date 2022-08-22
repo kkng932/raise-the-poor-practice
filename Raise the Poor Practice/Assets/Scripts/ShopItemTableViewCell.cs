@@ -29,18 +29,7 @@ public class GoldPerSecondChangeEvent
     }
 }
 
-// 알바 레벨 30 달성
-public class ArbeitLvOver30Event
-{
-    public int code;
 
-    static ArbeitLvOver30Event _ev = new ArbeitLvOver30Event();
-    public static void Publish(int code)
-    {
-        _ev.code = code;
-        EventBus.Publish(_ev);
-    }
-}
 
 public class ShopItemTableViewCell : TableViewCell<Arbeit>
 {
@@ -84,11 +73,6 @@ public class ShopItemTableViewCell : TableViewCell<Arbeit>
         
         GoldPerSecondChangeEvent.Publish(userData.per_second);
         ViewChangeEvent.Publish(arbeit.code, arbeit.level);
-
-        if(arbeit.level>=30)
-        {
-            ArbeitLvOver30Event.Publish(arbeit.code);
-        }
-
+        
     }
 }

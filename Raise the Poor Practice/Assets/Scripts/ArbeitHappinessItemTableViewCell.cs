@@ -45,9 +45,9 @@ public class ArbeitHappinessItemTableViewCell : TableViewCell<ArbeitHappiness>
     public override void UpdateContent(ArbeitHappiness itemData)
     {
         arbeitHappiness = itemData;
-
+        
         // 알바의 행복 잠김
-        if (!arbeitHappiness.lock_status)
+        if (gameData.Arbeit[arbeitHappiness.code - 1].level < 30)
         {
             string name = gameData.Arbeit[arbeitHappiness.code-1].name;
             BuyBtn.gameObject.SetActive(false);
@@ -94,12 +94,6 @@ public class ArbeitHappinessItemTableViewCell : TableViewCell<ArbeitHappiness>
         }
         ArbeitHappinessStatusChangeEvent.Publish(arbeitHappiness.code, arbeitHappiness.buy_status);
 
-    }
-    public void Show(int code)
-    {
-        Debug.Log(arbeitHappiness.code);
-        if (arbeitHappiness.code == code)
-            arbeitHappiness.lock_status = true;
     }
     private void Update()
     {
