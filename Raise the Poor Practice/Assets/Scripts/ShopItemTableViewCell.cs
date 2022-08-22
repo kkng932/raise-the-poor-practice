@@ -29,6 +29,19 @@ public class GoldPerSecondChangeEvent
     }
 }
 
+// 알바 레벨 30 달성
+public class ArbeitLvOver30Event
+{
+    public int code;
+
+    static ArbeitLvOver30Event _ev = new ArbeitLvOver30Event();
+    public static void Publish(int code)
+    {
+        _ev.code = code;
+        EventBus.Publish(_ev);
+    }
+}
+
 public class ShopItemTableViewCell : TableViewCell<Arbeit>
 {
     [SerializeField] private Text DescTxt;
@@ -51,7 +64,7 @@ public class ShopItemTableViewCell : TableViewCell<Arbeit>
 
 
         double cost = arbeit.pay + arbeit.pay / 100 * arbeit.level;
-        ButtonTxt.text="비용: "+cost.ToString()+"\n"+arbeit.perSecond.ToString()+"/초";
+        ButtonTxt.text="비용: "+cost.ToString()+"\n"+(arbeit.perSecond*arbeit.level).ToString()+"/초";
     }
     public void BuyItem()
     {
@@ -65,12 +78,17 @@ public class ShopItemTableViewCell : TableViewCell<Arbeit>
        
         arbeit.level++;
 
-        arbeit.perSecond = arbeit.perSecond * (arbeit.level + 1);
+
         userData.per_second += arbeit.perSecond;
         UpdateContent(arbeit);
         
         GoldPerSecondChangeEvent.Publish(userData.per_second);
         ViewChangeEvent.Publish(arbeit.code, arbeit.level);
+
+        if(arbeit.level>=30)
+        {
+            ArbeitLvOver30Event.Publish(arbeit.code);
+        }
 
     }
 }

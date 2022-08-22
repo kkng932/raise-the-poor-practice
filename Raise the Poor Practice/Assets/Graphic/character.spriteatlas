@@ -44,6 +44,7 @@ SpriteAtlas:
   - {fileID: -4157312697043145231, guid: b8d7cd518d3184a4790f52f6acf32c83, type: 3}
   - {fileID: 4806611480414636138, guid: 42583e0373c2d094fb8cdcd90c4ee8ab, type: 3}
   - {fileID: -5452400020089254403, guid: 42583e0373c2d094fb8cdcd90c4ee8ab, type: 3}
+  - {fileID: 21300000, guid: 5bf4117399872eb4d85e9810262965ed, type: 3}
   - {fileID: 2511472288312993179, guid: 831760b3ced32c046b79372557896cbd, type: 3}
   - {fileID: 6916797175428445125, guid: 831760b3ced32c046b79372557896cbd, type: 3}
   - {fileID: -7074925920440440983, guid: e4aefec32df3fd04a8cdcec4b480b86c, type: 3}
@@ -51,22 +52,29 @@ SpriteAtlas:
   - {fileID: -4298978924925727894, guid: 29a91af30bf533846aa7651478ae75e4, type: 3}
   - {fileID: -3419676982919820214, guid: 29a91af30bf533846aa7651478ae75e4, type: 3}
   - {fileID: 21300000, guid: 3d761df3582d45c48b61b26ff074a603, type: 3}
-  - {fileID: 21300000, guid: 5d347724468326f42a58fdee92293abc, type: 3}
+  - {fileID: 21300000, guid: 42bf8b05f8a2479459629c75e3098f5d, type: 3}
   - {fileID: -3719800842867212524, guid: f99d3c15a25553741af42147e37a4947, type: 3}
   - {fileID: -2630418236956768622, guid: f99d3c15a25553741af42147e37a4947, type: 3}
   - {fileID: 6185164451061822493, guid: 3c9cc4258da2d6b44a9f26ee6be5f812, type: 3}
   - {fileID: -6074185910707617545, guid: 3c9cc4258da2d6b44a9f26ee6be5f812, type: 3}
   - {fileID: 4893300713630025864, guid: 3c9cc4258da2d6b44a9f26ee6be5f812, type: 3}
+  - {fileID: 21300000, guid: 66cf9f654b3b98c4c8887e372246ba2f, type: 3}
   - {fileID: 1826326419970133196, guid: 2d5306757e3030d438c8e4b14b75603c, type: 3}
   - {fileID: -3612082842675259967, guid: 2d5306757e3030d438c8e4b14b75603c, type: 3}
+  - {fileID: 21300000, guid: ff6ca385cb58e3341ac7f0e9db69d0eb, type: 3}
   - {fileID: -3482499428649659664, guid: 70f063c5da6b5804ebab77f7eb46e663, type: 3}
   - {fileID: -4107051909851979473, guid: 70f063c5da6b5804ebab77f7eb46e663, type: 3}
   - {fileID: 5440515855198732043, guid: 70f063c5da6b5804ebab77f7eb46e663, type: 3}
+  - {fileID: 21300000, guid: fd97bf965e741584b8387073bf3baa05, type: 3}
+  - {fileID: 21300000, guid: 795b8e3737bac584e935c04c73d09edb, type: 3}
   - {fileID: -3683193467633699978, guid: 282f0377fa9095a4185c30f7eb2d3b4c, type: 3}
   - {fileID: -1457942107105862254, guid: 282f0377fa9095a4185c30f7eb2d3b4c, type: 3}
   - {fileID: 8785978117358033148, guid: 7bfafa180704c904fb610971c634f956, type: 3}
   - {fileID: -309434364510141084, guid: 7bfafa180704c904fb610971c634f956, type: 3}
+  - {fileID: 21300000, guid: c626142849bb74d40acd22ad34e281b9, type: 3}
+  - {fileID: 21300000, guid: 31e944386ee5e7246863e80bcf049f10, type: 3}
   - {fileID: 21300000, guid: c811e548999f23943aa6c9f8cdce62d2, type: 3}
+  - {fileID: 21300000, guid: 75cf95a967f2730408310626bc73dd90, type: 3}
   - {fileID: 694225420968331822, guid: 3570b51bc119d1d49abcc76ff784321f, type: 3}
   - {fileID: 4215713164950202494, guid: 3570b51bc119d1d49abcc76ff784321f, type: 3}
   - {fileID: 8695901203044355430, guid: 3570b51bc119d1d49abcc76ff784321f, type: 3}
@@ -76,6 +84,7 @@ SpriteAtlas:
   - {fileID: 2994718930005075327, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
   - {fileID: -6385029908380293944, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
   - {fileID: -2614752634628811398, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
+  - {fileID: 21300000, guid: 9ac918ffa39eebd469a0516dd7ef596e, type: 3}
   m_PackedSpriteNamesToIndex:
   - pig_sprite_0
   - pig_sprite_1
@@ -83,6 +92,7 @@ SpriteAtlas:
   - bear_sprite_1
   - cow_sprite_1
   - cow_sprite_0
+  - UI-02
   - bat_sprite_1
   - bat_sprite_0
   - dog_sprite_0
@@ -90,22 +100,29 @@ SpriteAtlas:
   - fox_sprite_1
   - fox_sprite_0
   - painter
-  - backbutton
+  - UI-04
   - duck_sprite_1
   - duck_sprite_0
   - wolf_sprite_0
   - wolf_sprite_1
   - wolf_sprite_2
+  - button
   - frog_sprite_0
   - frog_sprite_1
+  - UI-03
   - hak_sprite_2
   - hak_sprite_0
   - hak_sprite_1
+  - BackButton
+  - UI-01
   - ti_1
   - ti_0
   - lion_sprite_0
   - lion_sprite_1
+  - UI-9
+  - UI-39
   - background
+  - UI-40
   - mouse_sprite_1
   - mouse_sprite_0
   - mouse_sprite_2
@@ -115,6 +132,7 @@ SpriteAtlas:
   - rabbit_sprite_0
   - rabbit_sprite_1
   - rabbit_sprite_2
+  - UI-06
   m_RenderDataMap: {}
   m_Tag: character
   m_IsVariant: 0

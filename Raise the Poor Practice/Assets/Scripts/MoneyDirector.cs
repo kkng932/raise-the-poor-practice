@@ -66,7 +66,7 @@ public class MoneyDirector : MonoBehaviour
         // 시험용 치트키
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            userData.my_money += 1000000000000;
+            userData.my_money += double.Parse("100000000000000000000");
         }
     }
 }
