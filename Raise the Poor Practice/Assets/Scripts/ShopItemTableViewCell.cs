@@ -55,6 +55,7 @@ public class ShopItemTableViewCell : TableViewCell<Arbeit>
         double cost = arbeit.pay + arbeit.pay / 100 * arbeit.level;
         ButtonTxt.text="ºñ¿ë: "+cost.ToString()+"\n"+(arbeit.perSecond*arbeit.level).ToString()+"/ÃÊ";
     }
+
     public void BuyItem()
     {
 

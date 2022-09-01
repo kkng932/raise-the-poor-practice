@@ -8,12 +8,15 @@ public class PoorPower : MonoBehaviour
     [SerializeField] private Text DescTxt;
     [SerializeField] private Text ButtonTxt;
     [SerializeField] private Text ClickMoneyTxt;
+    
 
     [Inject]
     UserData userData;
 
+
     InjectObj InjectObj = new InjectObj();
 
+    
     
     
     private void Start()
@@ -28,7 +31,8 @@ public class PoorPower : MonoBehaviour
         DescTxt.text = "사장거지Lv" + userData.level.ToString();
         ButtonTxt.text = "비용" + Utility.MoneyToString(userData.levelup_cost)
             + "\n" + Utility.MoneyToString(userData.click_money) + "/클릭";
-        ClickMoneyTxt.text = "현재원/클릭: " + Utility.MoneyToString(userData.click_money) + "원";
+        ClickMoneyTxt.text = "현재원/클릭: " + Utility.MoneyToString(userData.click_money);
+        
     }
 
 

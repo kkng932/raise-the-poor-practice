@@ -74,13 +74,22 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c626142849bb74d40acd22ad34e281b9, type: 3}
   - {fileID: 21300000, guid: 31e944386ee5e7246863e80bcf049f10, type: 3}
   - {fileID: 21300000, guid: c811e548999f23943aa6c9f8cdce62d2, type: 3}
+  - {fileID: -6948938603242394022, guid: 777497a878795814d91e571b1c607901, type: 3}
+  - {fileID: -870764279841663593, guid: 777497a878795814d91e571b1c607901, type: 3}
+  - {fileID: -7518538587120783125, guid: 777497a878795814d91e571b1c607901, type: 3}
+  - {fileID: 21300000, guid: e286b629e70de234cab88c4cbb9b1a10, type: 3}
   - {fileID: 21300000, guid: 75cf95a967f2730408310626bc73dd90, type: 3}
   - {fileID: 694225420968331822, guid: 3570b51bc119d1d49abcc76ff784321f, type: 3}
   - {fileID: 4215713164950202494, guid: 3570b51bc119d1d49abcc76ff784321f, type: 3}
   - {fileID: 8695901203044355430, guid: 3570b51bc119d1d49abcc76ff784321f, type: 3}
+  - {fileID: -3708436780881624510, guid: 740bad5b21936674086cf4c1cf416b99, type: 3}
+  - {fileID: 5881628111153034365, guid: 740bad5b21936674086cf4c1cf416b99, type: 3}
   - {fileID: -449762641189821095, guid: a44efadb4fbb32f4b8b763a49cb33016, type: 3}
   - {fileID: 805923176828731106, guid: a44efadb4fbb32f4b8b763a49cb33016, type: 3}
   - {fileID: -2598559581365812048, guid: a44efadb4fbb32f4b8b763a49cb33016, type: 3}
+  - {fileID: -8960088293666028372, guid: 33deb78c619b3e84daf665658feac254, type: 3}
+  - {fileID: 7164573212532270357, guid: 33deb78c619b3e84daf665658feac254, type: 3}
+  - {fileID: 3612935710267896883, guid: 33deb78c619b3e84daf665658feac254, type: 3}
   - {fileID: 2994718930005075327, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
   - {fileID: -6385029908380293944, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
   - {fileID: -2614752634628811398, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
@@ -122,13 +131,22 @@ SpriteAtlas:
   - UI-9
   - UI-39
   - background
+  - cat_sprite_2
+  - cat_sprite_0
+  - cat_sprite_1
+  - lock
   - UI-40
   - mouse_sprite_1
   - mouse_sprite_0
   - mouse_sprite_2
+  - sheep_sprite_1
+  - sheep_sprite_0
   - swallow_sprite_1
   - swallow_sprite_0
   - swallow_sprite_2
+  - chicken_sprite_1
+  - chicken_sprite_0
+  - chicken_sprite_2
   - rabbit_sprite_0
   - rabbit_sprite_1
   - rabbit_sprite_2

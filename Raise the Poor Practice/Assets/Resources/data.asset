@@ -17,70 +17,70 @@ MonoBehaviour:
     name: "\uC5EC\uC6B0"
     pay: 10000
     levelUpCost: 1
-    bonus: 5
+    bonus: 30
     level: 0
     perSecond: 1
   - code: 2
     name: "\uD559"
     pay: 50000
     levelUpCost: 5
-    bonus: 7
+    bonus: 50
     level: 0
     perSecond: 5
   - code: 3
     name: "\uC0AC\uC790"
     pay: 100000
     levelUpCost: 10
-    bonus: 10
+    bonus: 70
     level: 0
     perSecond: 10
   - code: 4
     name: "\uB450\uAEBC\uBE44"
     pay: 500000
     levelUpCost: 50
-    bonus: 14
+    bonus: 100
     level: 0
     perSecond: 50
   - code: 5
     name: "\uC18C"
     pay: 1000000
     levelUpCost: 100
-    bonus: 19
+    bonus: 150
     level: 0
     perSecond: 100
   - code: 6
     name: "\uB291\uB300"
     pay: 5000000
     levelUpCost: 500
-    bonus: 25
+    bonus: 200
     level: 0
     perSecond: 500
   - code: 7
     name: "\uACF0"
     pay: 10000000
     levelUpCost: 1000
-    bonus: 40
+    bonus: 300
     level: 0
     perSecond: 1000
   - code: 8
     name: "\uAC1C"
     pay: 50000000
     levelUpCost: 5000
-    bonus: 80
+    bonus: 400
     level: 0
     perSecond: 5000
   - code: 9
     name: "\uAC70\uC704"
     pay: 100000000
     levelUpCost: 10000
-    bonus: 200
+    bonus: 500
     level: 0
     perSecond: 10000
   - code: 10
     name: "\uD1A0\uB07C"
     pay: 10000000000
     levelUpCost: 500000
-    bonus: 600
+    bonus: 700
     level: 0
     perSecond: 500000
   - code: 11
@@ -112,21 +112,21 @@ MonoBehaviour:
     level: 0
     perSecond: 500000000
   - code: 15
-    name: chief
+    name: "\uB2ED"
     pay: 100000000000000
     levelUpCost: 5000000000
     bonus: 3000
     level: 0
     perSecond: 5000000000
   - code: 16
-    name: student
+    name: "\uACE0\uC591\uC774"
     pay: 1000000000000000
     levelUpCost: 50000000000
     bonus: 4000
     level: 0
     perSecond: 50000000000
   - code: 17
-    name: magician
+    name: "\uC591"
     pay: 5e+18
     levelUpCost: 500000000000
     bonus: 5000
@@ -429,3 +429,100 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+  City:
+  - code: 1
+    name: "\uD0C0\uC774\uBCA0\uC774"
+    pay: 1000000000000000
+    levelUpCost: 1000000000
+    level: 0
+    perSecond: 1000000000
+  - code: 2
+    name: "\uC2DC\uB4DC\uB2C8"
+    pay: 5000000000000000
+    levelUpCost: 5000000000
+    level: 0
+    perSecond: 5000000000
+  - code: 3
+    name: "\uD30C\uB9AC"
+    pay: 10000000000000000
+    levelUpCost: 10000000000
+    level: 0
+    perSecond: 10000000000
+  - code: 4
+    name: "\uB7F0\uB358"
+    pay: 50000000000000000
+    levelUpCost: 50000000000
+    level: 0
+    perSecond: 50000000000
+  - code: 5
+    name: "\uD64D\uCF69"
+    pay: 1e+17
+    levelUpCost: 100000000000
+    level: 0
+    perSecond: 100000000000
+  - code: 6
+    name: "\uC2F1\uAC00\uD3EC\uB974"
+    pay: 1e+18
+    levelUpCost: 1000000000000
+    level: 0
+    perSecond: 1000000000000
+  - code: 7
+    name: "\uB3C4\uCFC4"
+    pay: 1e+19
+    levelUpCost: 10000000000000
+    level: 0
+    perSecond: 10000000000000
+  - code: 8
+    name: "\uBCA0\uC774\uC9D5"
+    pay: 2e+19
+    levelUpCost: 20000000000000
+    level: 0
+    perSecond: 20000000000000
+  - code: 9
+    name: "\uB274\uC695"
+    pay: 3e+19
+    levelUpCost: 30000000000000
+    level: 0
+    perSecond: 30000000000000
+  - code: 10
+    name: "\uC11C\uC6B8"
+    pay: 5e+19
+    levelUpCost: 50000000000000
+    level: 0
+    perSecond: 50000000000000
+  Planet:
+  - code: 1
+    name: "\uC218\uC131"
+    price: 1e+20
+    per_second: 100000000000000
+    buy_status: 0
+  - code: 2
+    name: "\uAE08\uC131"
+    price: 2e+20
+    per_second: 200000000000000
+    buy_status: 0
+  - code: 3
+    name: "\uD654\uC131"
+    price: 3e+20
+    per_second: 300000000000000
+    buy_status: 0
+  - code: 4
+    name: "\uBAA9\uC131"
+    price: 5e+20
+    per_second: 500000000000000
+    buy_status: 0
+  - code: 5
+    name: "\uD1A0\uC131"
+    price: 1e+21
+    per_second: 1000000000000000
+    buy_status: 0
+  - code: 6
+    name: "\uCC9C\uC655\uC131"
+    price: 2e+21
+    per_second: 2000000000000000
+    buy_status: 0
+  - code: 7
+    name: "\uD574\uC655\uC131"
+    price: 3e+21
+    per_second: 3000000000000000
+    buy_status: 0

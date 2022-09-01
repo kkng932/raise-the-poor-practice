@@ -59,6 +59,26 @@ public class ArbeitHappiness
     public double profit;
     public bool lock_status;
 }
+
+[Serializable]
+public class City
+{
+    public int code;
+    public string name;
+    public double pay;
+    public double levelUpCost;
+    public int level;
+    public double perSecond;
+}
+[Serializable]
+public class Planet
+{
+    public int code;
+    public string name;
+    public double price;
+    public double per_second;
+    public bool buy_status;
+}
 public class GameData : ScriptableObject
 {
     public List<Arbeit> Arbeit = new List<Arbeit>();
@@ -66,4 +86,6 @@ public class GameData : ScriptableObject
     public List<Paint> Paint = new List<Paint>();
     public List<Enterprise> Enterprise = new List<Enterprise>();
     public List<ArbeitHappiness> ArbeitHappiness = new List<ArbeitHappiness>();
+    public List<City> City = new List<City>();
+    public List<Planet> Planet = new List<Planet>();
 }
