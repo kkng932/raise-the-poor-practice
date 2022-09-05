@@ -33,6 +33,7 @@ public class GoldPerSecondChangeEvent
 
 public class ShopItemTableViewCell : TableViewCell<Arbeit>
 {
+    [SerializeField] private Image IconImg;
     [SerializeField] private Text DescTxt;
     [SerializeField] private Text ButtonTxt;
 
@@ -49,6 +50,7 @@ public class ShopItemTableViewCell : TableViewCell<Arbeit>
         arbeit = itemData;
         InjectObj.Inject(this);
 
+        IconImg.sprite = SpriteSheetManager.GetSpriteByName("profiles", "profiles_" + (itemData.code-1).ToString());
         DescTxt.text = arbeit.name+" Lv"+arbeit.level.ToString();
 
 

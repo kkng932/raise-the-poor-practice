@@ -65,6 +65,7 @@ SpriteAtlas:
   - {fileID: -3482499428649659664, guid: 70f063c5da6b5804ebab77f7eb46e663, type: 3}
   - {fileID: -4107051909851979473, guid: 70f063c5da6b5804ebab77f7eb46e663, type: 3}
   - {fileID: 5440515855198732043, guid: 70f063c5da6b5804ebab77f7eb46e663, type: 3}
+  - {fileID: 9085329464345055985, guid: 1cf1ca4639c0ee0489f16d836b4e4670, type: 3}
   - {fileID: 21300000, guid: fd97bf965e741584b8387073bf3baa05, type: 3}
   - {fileID: 21300000, guid: 795b8e3737bac584e935c04c73d09edb, type: 3}
   - {fileID: -3683193467633699978, guid: 282f0377fa9095a4185c30f7eb2d3b4c, type: 3}
@@ -122,6 +123,7 @@ SpriteAtlas:
   - hak_sprite_2
   - hak_sprite_0
   - hak_sprite_1
+  - tiger_0
   - BackButton
   - UI-01
   - ti_1

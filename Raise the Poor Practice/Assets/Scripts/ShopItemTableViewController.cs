@@ -23,6 +23,7 @@ public class ShopItemTableViewController : TableViewController<Arbeit>
     protected override void Awake()
     {
         base.Awake();
+        SpriteSheetManager.Load("profiles");
     }
     protected override void Start()
     {
