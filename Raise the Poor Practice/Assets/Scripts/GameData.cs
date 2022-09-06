@@ -47,6 +47,7 @@ public class Enterprise
     public double per_second;
     public bool buy_status;
     public double profit;
+    public double bonus;
 }
 [Serializable]
 public class ArbeitHappiness
