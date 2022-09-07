@@ -57,9 +57,9 @@ public class PaintItemTableViewCell : TableViewCell<Paint>
         {
             endTime = DateTime.Now;
             BtnTxt.text = "판매하기";
-            PriceTxt.text = "구매가: " + paint.price;
+            PriceTxt.text = "구매가: " + Utility.MoneyToString(paint.price);
             paint.profit = paint.per_second * ((endTime - startTime).Seconds);
-            CurrPriceTxt.text = "현재가: " + (paint.price + paint.per_second * ((endTime - startTime).Seconds)).ToString();
+            CurrPriceTxt.text = "현재가: " + Utility.MoneyToString(paint.price + paint.per_second * ((endTime - startTime).Seconds));
         }
     }
     public void BuyItem()
