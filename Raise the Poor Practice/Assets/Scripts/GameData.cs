@@ -59,6 +59,7 @@ public class ArbeitHappiness
     public bool buy_status;
     public double profit;
     public bool lock_status;
+    public double bonus;
 }
 
 [Serializable]

@@ -325,6 +325,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 100
   - code: 2
     name: "\uC608\uC220\uC758 \uCA50\uB2F9"
     price: 600000000000
@@ -332,6 +333,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 150
   - code: 3
     name: "\uC62C\uB9BC\uD53D\uCF58\uC11C\uD2B8\uC7A5"
     price: 700000000000
@@ -339,6 +341,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 200
   - code: 4
     name: "\uCE74\uB124\uB974\uAE30\uD640"
     price: 800000000000
@@ -346,6 +349,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 250
   - code: 5
     name: "\uCD95\uAD6C\uACBD\uAE30\uC7A5"
     price: 900000000000
@@ -353,6 +357,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 300
   - code: 6
     name: "\uCCA8\uB2E8\uACFC\uD559\uC5F0\uAD6C\uC18C"
     price: 1000000000000
@@ -360,6 +365,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 350
   - code: 7
     name: "\uCD5C\uC2E0\uC2DD \uC885\uD569\uBCD1\uC6D0"
     price: 5000000000000
@@ -367,6 +373,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 400
   - code: 8
     name: "\uCD08\uB300\uD615 \uC624\uB77D\uC2E4"
     price: 10000000000000
@@ -374,6 +381,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 500
   - code: 9
     name: "\uC7AC\uBC0C\uB2C8\uB79C\uB4DC"
     price: 50000000000000
@@ -381,6 +389,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 600
   - code: 10
     name: "\uC0AC\uB791\uC774 \uC774\uB8E8\uC5B4\uC9C0\uB294 \uBE4C\uB529"
     price: 100000000000000
@@ -388,6 +397,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 700
   - code: 11
     name: "\uC601\uC6D0\uD55C \uC57D\uC18D"
     price: 500000000000000
@@ -395,6 +405,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 1000
   - code: 12
     name: "\uC644\uBCBD\uD55C \uD559\uAD50"
     price: 1000000000000000
@@ -402,6 +413,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 3000
   - code: 13
     name: "\uBC31\uB9CC\uD3C9 \uB545"
     price: 5000000000000000
@@ -409,6 +421,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 5000
   - code: 14
     name: "\uD6CC\uB96D\uD55C \uACE8\uD504\uC7A5"
     price: 10000000000000000
@@ -416,6 +429,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 10000
   - code: 15
     name: '?'
     price: 50000000000000000
@@ -423,6 +437,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 15000
   - code: 16
     name: '?'
     price: 1e+17
@@ -430,6 +445,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 20000
   - code: 17
     name: '?'
     price: 5e+17
@@ -437,6 +453,7 @@ MonoBehaviour:
     buy_status: 0
     profit: 0
     lock_status: 0
+    bonus: 25000
   City:
   - code: 1
     name: "\uD0C0\uC774\uBCA0\uC774"
