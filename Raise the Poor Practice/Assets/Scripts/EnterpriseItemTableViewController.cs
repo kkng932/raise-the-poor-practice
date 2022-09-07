@@ -27,7 +27,7 @@ public class EnterpriseItemTableViewController : TableViewController<Enterprise>
     protected override void Awake()
     {
         base.Awake();
-        SpriteSheetManager.Load("enterprises");
+        SpriteSheetManager.Load("enterprise");
     }
     protected override void Start()
     {

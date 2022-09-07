@@ -52,14 +52,13 @@ public class ArbeitHappinessItemTableViewCell : TableViewCell<ArbeitHappiness>
             string name = gameData.Arbeit[arbeitHappiness.code-1].name;
             BuyBtn.gameObject.SetActive(false);
             NameTxt.text = name + "의 행복 잠김\n조건: "+name+" 30레벨";
-            
-
+            iconImg.sprite = Resources.Load<Sprite>("lock") as Sprite;
         }
         else if (!arbeitHappiness.buy_status)
         {
             NameTxt.text = arbeitHappiness.name;
 
-            iconImg.sprite = SpriteSheetManager.GetSpriteByName("arbeitHappinesss", "arbeitHappiness" + itemData.code.ToString());
+            iconImg.sprite = SpriteSheetManager.GetSpriteByName("fruits", "fruits_" + (itemData.code-1).ToString());
             BuyBtn.gameObject.SetActive(true);
             BtnTxt.text = Utility.MoneyToString(arbeitHappiness.price);
             PriceTxt.text = "";
@@ -67,6 +66,7 @@ public class ArbeitHappinessItemTableViewCell : TableViewCell<ArbeitHappiness>
         }
         else
         {
+            iconImg.sprite = SpriteSheetManager.GetSpriteByName("fruits", "fruits_" + (itemData.code - 1).ToString());
             BuyBtn.gameObject.SetActive(true);
             endTime = DateTime.Now;
             BtnTxt.text = "판매하기";

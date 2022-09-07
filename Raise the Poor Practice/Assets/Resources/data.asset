@@ -220,110 +220,103 @@ MonoBehaviour:
     profit: 0
   Enterprise:
   - code: 1
-    name: "\uD14C\uC4F8\uB77C"
+    name: "\uBC14\uC704 \uACFC\uC77C"
     price: 10000000000000
     per_second: 100000000
     buy_status: 0
     profit: 0
     bonus: 100
   - code: 2
-    name: bwm
+    name: "\uBB34\uD55C\uD06C\uB85C \uB77D\uC2A4"
     price: 20000000000000
     per_second: 200000000
     buy_status: 0
     profit: 0
     bonus: 150
   - code: 3
-    name: "\uBCA4\uCE04"
+    name: "\uBC31\uC138 \uBC30\uD130\uB9AC"
     price: 30000000000000
     per_second: 300000000
     buy_status: 0
     profit: 0
     bonus: 200
   - code: 4
-    name: "\uD3ED\uC18C\uBC14\uAC90"
+    name: "\uBD80\uC0B0 \uBC84\uD130"
     price: 50000000000000
     per_second: 500000000
     buy_status: 0
     profit: 0
     bonus: 250
   - code: 5
-    name: "\uC2A4\uD0C0\uBC15\uC2A4"
+    name: "\uC26C\uB294\uC2DC\uAC04 \uCD08\uCF54\uBC14"
     price: 100000000000000
     per_second: 100000000
     buy_status: 0
     profit: 0
     bonus: 300
   - code: 6
-    name: "\uB3C4\uC694\uD1A0"
+    name: "\uC640\uBCF4\uB798\uC694 \uC624\uC988"
     price: 200000000000000
     per_second: 2000000000
     buy_status: 0
     profit: 0
     bonus: 350
   - code: 7
-    name: "\uB137\uD50C\uB9AC\uC988"
+    name: "\uC288\uD37C \uCEE4\uD53C"
     price: 300000000000000
     per_second: 3000000000
     buy_status: 0
     profit: 0
     bonus: 400
   - code: 8
-    name: "\uB9C9\uB3C4\uB110\uB4DC"
+    name: "\uC544\uC8FC\uB77C \uCFE0\uD0A4"
     price: 500000000000000
     per_second: 5000000000
     buy_status: 0
     profit: 0
     bonus: 500
   - code: 9
-    name: "\uCE74\uCE74\uCF5C\uB77C"
+    name: "\uB2EC\uD45C \uC2DD\uC6A9\uC720"
     price: 1000000000000000
     per_second: 10000000000
     buy_status: 0
     profit: 0
     bonus: 600
   - code: 10
-    name: "\uD0C4\uC13C\uD2B8"
+    name: "\uC544\uB77C\uB9AC \uACC4\uB780"
     price: 2000000000000000
     per_second: 20000000000
     buy_status: 0
     profit: 0
     bonus: 700
   - code: 11
-    name: "\uD398\uC774\uC2A4\uCFE1"
+    name: "\uB2E5\uD130\uBBF8 \uC5D0\uB108\uC9C0\uBC14"
     price: 3000000000000000
     per_second: 30000000000
     buy_status: 0
     profit: 0
     bonus: 800
   - code: 12
-    name: "\uADF8\uAE00"
+    name: "\uB0B4\uD314 \uD504\uB77C\uC774\uD32C"
     price: 5000000000000000
     per_second: 50000000000
     buy_status: 0
     profit: 0
     bonus: 900
   - code: 13
-    name: "\uC544\uB9C8\uB3C4\uC874"
+    name: "\uB9D8\uBAA8\uC2A4 \uB531\uD480"
     price: 10000000000000000
     per_second: 100000000000
     buy_status: 0
     profit: 0
     bonus: 1000
   - code: 14
-    name: "\uB9C8\uC774\uD06C\uB85C\uD558\uB4DC"
+    name: "\uC874\uC2A8\uC988\uD0A4\uB4DC \uB85C\uC158"
     price: 20000000000000000
     per_second: 200000000000
     buy_status: 0
     profit: 0
     bonus: 1500
-  - code: 15
-    name: "\uC560\uD50C\uB4E4"
-    price: 30000000000000000
-    per_second: 300000000000
-    buy_status: 0
-    profit: 0
-    bonus: 2000
   ArbeitHappiness:
   - code: 1
     name: "\uC138\uC885\uBB34\uB098\uD68C\uAD00"

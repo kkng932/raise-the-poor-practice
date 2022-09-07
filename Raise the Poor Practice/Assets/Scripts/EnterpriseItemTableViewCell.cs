@@ -45,7 +45,7 @@ public class EnterpriseItemTableViewCell : TableViewCell<Enterprise>
 
         NameTxt.text = enterprise.name;
 
-        iconImg.sprite = SpriteSheetManager.GetSpriteByName("enterprises", "enterprise" + itemData.code.ToString());
+        iconImg.sprite = SpriteSheetManager.GetSpriteByName("enterprise", "enterprise_" + (itemData.code-1).ToString());
 
         if (!enterprise.buy_status)
         {
@@ -57,9 +57,9 @@ public class EnterpriseItemTableViewCell : TableViewCell<Enterprise>
         {
             endTime = DateTime.Now;
             BtnTxt.text = "판매하기";
-            PriceTxt.text = "구매가: " + enterprise.price;
+            PriceTxt.text = "구매가: " + Utility.MoneyToString(enterprise.price);
             enterprise.profit = enterprise.per_second * ((endTime - startTime).Seconds);
-            CurrPriceTxt.text = "현재가: " + (enterprise.price + enterprise.per_second * ((endTime - startTime).Seconds)).ToString();
+            CurrPriceTxt.text = "현재가: " + Utility.MoneyToString(enterprise.price + enterprise.per_second * ((endTime - startTime).Seconds));
         }
     }
     public void BuyItem()

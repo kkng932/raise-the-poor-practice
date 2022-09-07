@@ -45,7 +45,7 @@ public class PlanetItemTableViewCell : TableViewCell<Planet>
 
         NameTxt.text = planet.name;
 
-        iconImg.sprite = SpriteSheetManager.GetSpriteByName("planets", "planet" + itemData.code.ToString());
+        iconImg.sprite = SpriteSheetManager.GetSpriteByName("planets", "planets_" + (itemData.code-1).ToString());
 
         if (!planet.buy_status)
         {

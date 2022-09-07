@@ -28,7 +28,7 @@ public class ArbeitHappinessItemTableViewController : TableViewController<Arbeit
     {
         base.Awake();
         // 스프라이트 생성하면 바꾸기
-        SpriteSheetManager.Load("arbeitHappinesss");
+        SpriteSheetManager.Load("fruits");
     }
     protected override void Start()
     {
