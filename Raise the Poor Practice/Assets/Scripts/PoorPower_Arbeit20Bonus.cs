@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class PoorPower_Arbeit20Bonus : MonoBehaviour
 {
-    [SerializeField] private Text[] Arbeit20Bonus;
+    [SerializeField] private Image[] BonusImg;
+    [SerializeField] private Text[] BonusTxt;
 
     [Inject]
     GameData gameData;
@@ -13,6 +14,7 @@ public class PoorPower_Arbeit20Bonus : MonoBehaviour
     
     private void OnEnable()
     {
+        SpriteSheetManager.Load("profiles");
         InjectObj.Inject(this);
         UpdateContent();
     }
@@ -20,11 +22,12 @@ public class PoorPower_Arbeit20Bonus : MonoBehaviour
     {
         for (int i = 0; i < gameData.Arbeit.Count; i++)
         {
+            BonusImg[i].sprite = SpriteSheetManager.GetSpriteByName("profiles", "profiles_" + i.ToString());
             if (gameData.Arbeit[i].level >= 20)
-                Arbeit20Bonus[i].text = "<color=red>";
+                BonusTxt[i].text = "<color=red>";
             else
-                Arbeit20Bonus[i].text = "<color=#3F3F3F>";
-            Arbeit20Bonus[i].text += gameData.Arbeit[i].name + "\n +" + gameData.Arbeit[i].bonus.ToString() + "%</color>";
+                BonusTxt[i].text = "<color=#3F3F3F>";
+            BonusTxt[i].text += gameData.Arbeit[i].name + "\n +" + gameData.Arbeit[i].bonus.ToString() + "%</color>";
         }
     }
 
