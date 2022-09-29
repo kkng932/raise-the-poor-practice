@@ -57,9 +57,9 @@ public class PlanetItemTableViewCell : TableViewCell<Planet>
         {
             endTime = DateTime.Now;
             BtnTxt.text = "판매하기";
-            PriceTxt.text = "구매가: " + planet.price;
+            PriceTxt.text = "구매가: " + Utility.MoneyToString(planet.price);
             //planet.profit = planet.per_second * ((endTime - startTime).Seconds);
-            CurrPriceTxt.text = "현재가: " + (planet.price + planet.per_second * ((endTime - startTime).Seconds)).ToString();
+            CurrPriceTxt.text = "현재가: " + Utility.MoneyToString(planet.price + planet.per_second * ((endTime - startTime).Seconds));
         }
     }
     public void BuyItem()

@@ -52,6 +52,7 @@ SpriteAtlas:
   - {fileID: -4298978924925727894, guid: 29a91af30bf533846aa7651478ae75e4, type: 3}
   - {fileID: -3419676982919820214, guid: 29a91af30bf533846aa7651478ae75e4, type: 3}
   - {fileID: 21300000, guid: 3d761df3582d45c48b61b26ff074a603, type: 3}
+  - {fileID: 21300000, guid: 0c09b30495ca9be428eca02f3e43e1e0, type: 3}
   - {fileID: 21300000, guid: 42bf8b05f8a2479459629c75e3098f5d, type: 3}
   - {fileID: -3719800842867212524, guid: f99d3c15a25553741af42147e37a4947, type: 3}
   - {fileID: -2630418236956768622, guid: f99d3c15a25553741af42147e37a4947, type: 3}
@@ -87,9 +88,11 @@ SpriteAtlas:
   - {fileID: -449762641189821095, guid: a44efadb4fbb32f4b8b763a49cb33016, type: 3}
   - {fileID: 805923176828731106, guid: a44efadb4fbb32f4b8b763a49cb33016, type: 3}
   - {fileID: -2598559581365812048, guid: a44efadb4fbb32f4b8b763a49cb33016, type: 3}
+  - {fileID: 21300000, guid: 71e4075cfc3476f48afaf17e5f3f8581, type: 3}
   - {fileID: -8960088293666028372, guid: 33deb78c619b3e84daf665658feac254, type: 3}
   - {fileID: 7164573212532270357, guid: 33deb78c619b3e84daf665658feac254, type: 3}
   - {fileID: 3612935710267896883, guid: 33deb78c619b3e84daf665658feac254, type: 3}
+  - {fileID: 21300000, guid: b087dc3dcdd465f4aaf49d7e485c5e88, type: 3}
   - {fileID: 2994718930005075327, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
   - {fileID: -6385029908380293944, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
   - {fileID: -2614752634628811398, guid: d737c39ff3bbae748bfd7286703bfa66, type: 3}
@@ -109,6 +112,7 @@ SpriteAtlas:
   - fox_sprite_1
   - fox_sprite_0
   - painter
+  - universe
   - UI-04
   - duck_sprite_1
   - duck_sprite_0
@@ -144,9 +148,11 @@ SpriteAtlas:
   - swallow_sprite_1
   - swallow_sprite_0
   - swallow_sprite_2
+  - fruit_thumnail
   - chicken_sprite_1
   - chicken_sprite_0
   - chicken_sprite_2
+  - enterprise_thumnail
   - rabbit_sprite_0
   - rabbit_sprite_1
   - rabbit_sprite_2

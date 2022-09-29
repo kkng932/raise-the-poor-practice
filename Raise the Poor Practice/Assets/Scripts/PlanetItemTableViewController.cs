@@ -48,7 +48,7 @@ public class PlanetItemTableViewController : TableViewController<Planet>
             }
 
         }
-        PurchaseTxt.text = "미술품 총 구매가: " + Utility.MoneyToString(purchase);
+        PurchaseTxt.text = "행성 총 구매가: " + Utility.MoneyToString(purchase);
         CurrValueTxt.text = "현재 총 가치: " + Utility.MoneyToString(purchase + profit);
         ProfitTxt.text = "이익: " + Utility.MoneyToString(profit);
     }
