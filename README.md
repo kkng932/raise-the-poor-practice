@@ -196,6 +196,37 @@ close XML을 이용해 엑셀파일을 데이터로 변환
         
     }
 ```
+엑셀 파일이 수정되면 자동으로 변환
+```C#
+class DetectChange : AssetPostprocessor
+{
+    static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
+    {
+
+        foreach (string str in importedAssets)
+        {
+            // 바뀐 데이터가 원하는 데이터인지
+            if (str == "Assets/xlsx/data.xlsx")
+            {
+                MyMenu.XlsxToAsset();
+                Debug.Log("DetectChange");
+            }
+
+        }
+        foreach (string str in deletedAssets)
+        {
+            Debug.Log("Deleted Asset: " + str);
+        }
+
+        for (int i = 0; i < movedAssets.Length; i++)
+        {
+            Debug.Log("Moved Asset: " + movedAssets[i] + " from: " + movedFromAssetPaths[i]);
+        }
+
+
+    }
+}
+```
 ## Dependency Injection
 
 ## 뷰포트 크기에 맞게 동적으로 셀 표시
