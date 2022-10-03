@@ -228,7 +228,133 @@ class DetectChange : AssetPostprocessor
 }
 ```
 ## Dependency Injection
+```C#
+public class InjectContainer
+{
+    static InjectContainer _Instance = new InjectContainer();
+    public static InjectContainer Instance { get => _Instance; }
 
+    Dictionary<Type, object> dic = new Dictionary<Type, object>();
+
+    public void Regist<T>(T obj)
+    {
+        dic[typeof(T)] = obj;
+    }
+
+    public object Get(Type t)
+    {
+        return dic[t];
+    }
+
+    public void Inject<T>(T obj)
+    {
+        var type = typeof(T);
+
+        //obj 필드중에 Inject 가 있는 필드를 찾아서
+        //등록된 값을 obj의 필드에 넣어주는함수
+        var fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance);
+
+        foreach (var f in fields)
+        {
+
+            if (f.GetCustomAttribute<Inject>(false) != null)
+            {
+                f.SetValue(obj, Get(f.FieldType));
+            }
+
+        }
+    }
+
+    internal void Reset()
+    {
+        dic = new Dictionary<Type, object>();
+    }
+}
+
+public class Inject : Attribute
+{
+
+}
+
+
+public class InjectObj
+{
+    InjectContainer _InjectContainer;
+
+    bool isInjected = false;
+
+    public void Inject<T>(T t)
+    {
+        if (isInjected)
+        {
+            return;
+        }
+        isInjected = true;
+
+        if (_InjectContainer == null)
+        {
+            _InjectContainer = InjectContainer.Instance;
+        }
+
+        _InjectContainer.Inject(t);
+
+    }
+}
+
+```
+사용할 때
+```C#
+[Inject]
+    UserData userData;
+
+    InjectObj InjectObj = new InjectObj();
+
+    private void OnEnable()
+    {
+        InjectObj.Inject(this);
+    }
+```
 ## 뷰포트 크기에 맞게 동적으로 셀 표시
 
 ## EventBus
+```C#
+public class EventBus 
+{
+
+    static Dictionary<System.Type, List<Delegate>> _handlerDic = new Dictionary<Type, List<Delegate>>();
+ 
+    public static void Publish<T>(T ev)
+    {
+        var type = typeof(T);
+
+        if (_handlerDic.ContainsKey(type) == false)
+            return;
+
+        foreach (var action in _handlerDic[type])
+        {
+            (action as System.Action<T>)(ev);
+        }
+
+    }
+
+    public static void Subscribes<T>(System.Action<T> handler)
+    {
+        var type = typeof(T);
+        if (_handlerDic.ContainsKey(type) == false)
+        {
+            _handlerDic.Add(type,new List<Delegate>());
+        }
+        _handlerDic[type].Add(handler);
+    }
+
+    public static void Unsubscribes<T>(System.Action<T> handler)
+    {
+        var type = typeof(T);
+        if (_handlerDic.ContainsKey(type) == false)
+            return;
+        _handlerDic[type].Remove(handler as System.Action);
+    }
+
+}
+
+```
