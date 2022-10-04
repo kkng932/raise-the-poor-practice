@@ -252,7 +252,8 @@ public class InjectContainer
 
         //obj 필드중에 Inject 가 있는 필드를 찾아서
         //등록된 값을 obj의 필드에 넣어주는함수
-        var fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance);
+        var fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic |
+        BindingFlags.DeclaredOnly | BindingFlags.Instance);
 
         foreach (var f in fields)
         {
