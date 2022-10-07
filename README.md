@@ -138,47 +138,7 @@ close XML을 이용해 엑셀파일을 데이터로 변환
         {
             fieldInfo.SetValue(temp, float.Parse(column));
         }
-        else if (ft == typeof(ulong))
-        {
-            // 지수 표기법일 때
-            if (column.Contains("E") || column.Contains("e"))
-            {
-                int exponent = int.Parse(column[0].ToString());
-                int fraction = int.Parse(column.Substring(column.IndexOf("+")));
-                ulong ucolumn = (ulong)exponent;
-                for (int i = 0; i < fraction; i++)
-                    ucolumn *= 10;
-                fieldInfo.SetValue(temp, ucolumn);
-
-            }
-            else
-            {
-                fieldInfo.SetValue(temp, ulong.Parse(column));
-            }
-            
-        }
-        else if (ft == typeof(BigInteger))
-        {
-            
-            // 지수 표기법일 때
-            if (column.Contains("E") || column.Contains("e"))
-            {
-                //int exponent = int.Parse(column[0].ToString());
-                int fraction = int.Parse(column.Substring(column.IndexOf("+")));
-                BigInteger bcolumn = BigInteger.Parse(column[0].ToString());
-                for (int i = 0; i < fraction; i++)
-                    bcolumn *= 10;
-                //Debug.Log(bcolumn);
-                fieldInfo.SetValue(temp, bcolumn);
-
-            }
-            else
-            {
-                //Debug.Log(column);
-                fieldInfo.SetValue(temp, BigInteger.Parse(column));
-            }
-
-        }
+        
         else if (ft == typeof(bool))
         {
             if (column.ToUpper().Equals("TRUE"))
