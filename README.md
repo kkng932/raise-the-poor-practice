@@ -84,9 +84,7 @@ close XML을 이용해 엑셀파일을 데이터로 변환
 
             object temp = GetInstanceFromRow(currType, columns, currentRow);
 
-            // Add
             dataList.Add(temp);
-            //                    method.Invoke(dataList, new object[] { temp });
             rowIdx++;
 
         }
